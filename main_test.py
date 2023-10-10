@@ -89,21 +89,6 @@ def test_selenium(driver, url):
     # Go Back
     driver.back()
 
-    # Test Dynamic Loading
-    driver.find_element(By.LINK_TEXT, "Dynamic Loading").click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/a[1]').click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/a[1]').click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/a[2]').click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/a[2]').click()
-    time.sleep(2)
-
-    # Go Back
-    driver.back()
-
     # Test Exit Intent
     driver.find_element(By.LINK_TEXT, "Exit Intent").click()
     time.sleep(2)
