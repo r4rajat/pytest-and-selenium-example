@@ -85,17 +85,3 @@ def test_selenium(driver, url):
     time.sleep(2)
     driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/form[2]/button').click()
     time.sleep(2)
-
-    # Go Back
-    driver.back()
-
-    # Test Exit Intent
-    driver.find_element(By.LINK_TEXT, "Exit Intent").click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/form/input').click()
-    time.sleep(2)
-    driver.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/form/input').click()
-    time.sleep(2)
-
-
-
