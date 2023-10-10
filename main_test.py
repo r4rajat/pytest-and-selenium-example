@@ -1,9 +1,8 @@
-import time
-
-from selenium import webdriver
 import pytest
+from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
+import time
 
 
 @pytest.fixture(scope="module")
